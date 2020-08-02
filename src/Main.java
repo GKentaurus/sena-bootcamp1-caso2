@@ -19,8 +19,8 @@ public class Main {
         ArrayList<Cliente> listaClientes = new ArrayList<>();
         
         do {
-            System.out.println("===============================================================\n"
-                                + "|                Escoja una opción de menú                    |\n"
+            System.out.println( "===============================================================\n"
+                                + "|                       Menú Principal                        |\n"
                                 + "===============================================================\n"
                                 + "| 1. | Registrar cliente\n"
                                 + "| 2. | Consignar cuenta corriente\n"
@@ -34,14 +34,15 @@ public class Main {
                                 + "| 10.| Cerrar CDT\n"
                                 + "| 11.| Simulación saldo cuenta ahorros con intereses\n"
                                 + "| 12.| Salir del programa\n"
-                                + "===============================================================\n");
+                                + "===============================================================\n"
+                                + "> Opción:");
             
             int menu = input.nextInt();
             switch (menu) {
                 case 1:
-                System.out.println("===============================================================\n"
-                                + "|                   Registrar nuevo cliente                   |\n"
-                                + "===============================================================");
+                    System.out.println("===============================================================\n"
+                                    + "|                   Registrar nuevo cliente                   |\n"
+                                    + "===============================================================");
                     input.nextLine();
                     System.out.print("| Ingrese el nombre del Cliente: ");
                     String nombre = input.nextLine();
@@ -208,11 +209,6 @@ public class Main {
                 case 12:
                     System.out.println("Gracias por usar este servicio");
                     continuar = false;
-                    break;
-                case 13:
-                    System.out.print("ID Cliente: ");
-                    idCliente = input.nextInt();
-                    System.out.println(listaClientes.get(idCliente).toString());
                     break;
                 default:
                     break;
