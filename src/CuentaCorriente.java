@@ -20,10 +20,11 @@ public class CuentaCorriente extends CuentaBancaria {
 
     public double retirarMonto(double monto) {
         if (monto > this.saldo) {
-            System.out.println("Saldo insuficiente");
+            System.out.println("| Saldo insuficiente\n");
             return this.saldo;
         } else {
-            return this.saldo = this.saldo - monto;
+            this.saldo = this.saldo - monto;
+            return this.saldo;
         }
     }
 

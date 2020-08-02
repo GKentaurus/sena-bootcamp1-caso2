@@ -28,11 +28,13 @@ public class Cliente {
         this.cdtActivo = false;
 
         System.out.println("===============================================================\n"
-                        + "|             Cliente creado satisfactoriamente               |\n"
-                        + "===============================================================\n"
-        + "| Nombre: " + this.nombre
+                        + "|             Cliente creado satisfactoriamente\n"
+                        + "===============================================================\n|"
+        + "\n| ID Cliente: " + this.idCliente
+        + "\n|"
+        + "\n| Nombre: " + this.nombre
         + "\n| Cédula: " + this.cedula
-        + "\n\n| Cuenta Ahorros # " + this.cuentaAhorros.getIdCuenta()
+        + "\n|\n| Cuenta Ahorros # " + this.cuentaAhorros.getIdCuenta()
         + "\n| Cuenta Corriente # " + this.cuentaCorriente.getIdCuenta());
     }
 
